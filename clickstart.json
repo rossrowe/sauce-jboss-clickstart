@@ -3,6 +3,7 @@
     "name": "Maven - JBoss MySQL",
     "source": "git://github.com/swashbuck1r/jboss-db-example.git",
     "description" : "A EE6 full stack application, including a database",
+    "icon" : "ee6icon",
     "runtime": {
         "type": "jboss"
     },
