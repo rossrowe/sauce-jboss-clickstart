@@ -1,9 +1,8 @@
 {
     "id": "jboss-db-example",
-    "name": "Maven - JBoss MySQL",
+    "name": "Java EE 6 Web Profile",
     "source": "git://github.com/swashbuck1r/jboss-db-example.git",
-    "description" : "A EE6 full stack application, including a database",
-    "icon" : "ee6icon",
+    "description" : "A full Java EE 6 Web Profile application, including a database",
     "runtime": {
         "type": "jboss"
     },
