@@ -1,4 +1,16 @@
-This is an example JBoss application that is ready to deploy on CloudBees.
+Java EE 6 Web Profile with continuous deployment
+-----
+
+This clickstart is a full Java EE 6 Web Profile application, with a database and continuous deployment.
+Run this clickstart and it will generate a database, app, source repo and build service for you. 
+
+This showcases JPA and persistence configuration EE 6 style. To make changes, clone your generated repo. 
+Any changes you then push will be build and deployed.
+
+This is an example of the jboss container in action.
+
+Following are instructions if you want to set this up manually: 
+
 
 This example shows how to setup an app that uses  persistence.xml with a CloudBees database.
 

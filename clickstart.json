@@ -1,8 +1,9 @@
 {
     "id": "jboss-db-example",
     "name": "Java EE 6 Web Profile",
-    "source": "git://github.com/swashbuck1r/jboss-db-example.git",
-    "description" : "A full Java EE 6 Web Profile application, including a database",
+    "source": "git://github.com/CloudBees-community/jboss-db-example.git",
+    "description" : "A full Java EE 6 Web Profile application, with a database and continuous deployment",
+    "doc-url" : "https://github.com/CloudBees-community/jboss-db-example/blob/master/readme.md",
     "runtime": {
         "type": "jboss"
     },
