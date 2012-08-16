@@ -7,6 +7,8 @@ Launch this ClickStart and it will generate a database, app, source repo and bui
 This is an example of the jboss container in action. It showcases JPA and persistence configuration EE 6 style and how to setup an app that uses persistence.xml with a CloudBees database. To make changes, clone your generated repo. 
 Any changes you then push will be build and deployed.
 
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/jboss-db-example/master/clickstart.json"><img src="https://s3.amazonaws.com/cloudbees-downloads/clickstart/clickstart-now.png"/></a>
+
 Following are instructions if you want to set this up manually: 
 
 Requirements
