@@ -20,8 +20,9 @@
         }
     ],
     "build-with-jenkins": {
+        "plugins" : ["git", "sauce-ondemand"],
         "template": {
-            "type": "maven",
+            "type": "https://raw.github.com/rossrowe/sauce-jboss-clickstart/master/jenkins_template.xml",
             "options": {
             }
         }
