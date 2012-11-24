@@ -1,13 +1,14 @@
-Java EE 6 Web Profile with Continuous Deployment
+Java EE 6 Web Profile with Continuous Deployment and Sauce support
 -----
 
-This ClickStart is a full Java EE 6 Web Profile application, with a database and continuous deployment.
+This ClickStart is a full Java EE 6 Web Profile application, with a database and continuous deployment.  It also
+demonstrates how to run Selenium tests against the Clickstart using [Sauce](http://saucelabs.com)
 Launch this ClickStart and it will generate a database, app, source repo and build service for you. 
 
 This is an example of the jboss container in action. It showcases JPA and persistence configuration EE 6 style and how to setup an app that uses persistence.xml with a CloudBees database. To make changes, clone your generated repo. 
 Any changes you then push will be build and deployed.
 
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/jboss-db-example/master/clickstart.json"><img src="https://s3.amazonaws.com/cloudbees-downloads/clickstart/clickstart-now.png"/></a>
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/rossrowe/sauce-jboss-clickstart/master/clickstart.json"><img src="https://s3.amazonaws.com/cloudbees-downloads/clickstart/clickstart-now.png"/></a>
 
 Following are instructions if you want to set this up manually: 
 
@@ -24,7 +25,7 @@ Instructions
 
 Get the source
 
-    git clone git://github.com/swashbuck1r/jboss-db-example.git
+    git clone git://github.com/rossrowe/sauce-jboss-clickstart.git
 
 Build the WAR file
 
@@ -32,7 +33,7 @@ Build the WAR file
 
 Deploy the WAR file
 
-    bees app:deploy -t jboss -a MYAPP_ID target/jboss-db-example.war
+    bees app:deploy -t jboss -a MYAPP_ID target/sauce-jboss-db-example.war
 
 Create a database for the app
 
