@@ -99,7 +99,6 @@
             </seleniumInformation>
             <webDriverBrowsers reference="../seleniumInformation/webDriverBrowsers"/>
             <launchSauceConnectOnSlave>true</launchSauceConnectOnSlave>
-            <httpsProtocol></httpsProtocol>
         </hudson.plugins.sauce__ondemand.SauceOnDemandBuildWrapper>
     </buildWrappers>
     <prebuilders/>
