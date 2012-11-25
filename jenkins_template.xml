@@ -62,14 +62,6 @@
     <runHeadless>false</runHeadless>
     <reporters/>
     <publishers>
-        <hudson.maven.MavenTestDataPublisher>
-            <testDataPublishers>
-                <hudson.plugins.sauce__ondemand.SauceOnDemandReportPublisher/>
-            </testDataPublishers>
-        </hudson.maven.MavenTestDataPublisher>
-        <hudson.plugins.sauce__ondemand.SauceOnDemandMavenTestPublisher>
-            <testDataPublishers/>
-        </hudson.plugins.sauce__ondemand.SauceOnDemandMavenTestPublisher>
         <com.cloudbees.plugins.deployer.DeployPublisher>
             <deployIfUnstable>false</deployIfUnstable>
             <configuration>
@@ -86,21 +78,7 @@
             </configuration>
         </com.cloudbees.plugins.deployer.DeployPublisher>
     </publishers>
-    <buildWrappers>
-        <hudson.plugins.sauce__ondemand.SauceOnDemandBuildWrapper>
-            <enableSauceConnect>true</enableSauceConnect>
-            <seleniumHost></seleniumHost>
-            <seleniumPort>4445</seleniumPort>
-            <seleniumInformation>
-                <webDriverBrowsers>
-                    <string>Windows 2008internet explorer9</string>
-                </webDriverBrowsers>
-                <isWebDriver>true</isWebDriver>
-            </seleniumInformation>
-            <webDriverBrowsers reference="../seleniumInformation/webDriverBrowsers"/>
-            <launchSauceConnectOnSlave>true</launchSauceConnectOnSlave>
-        </hudson.plugins.sauce__ondemand.SauceOnDemandBuildWrapper>
-    </buildWrappers>
+    <buildWrappers/>
     <prebuilders/>
     <postbuilders/>
 </maven2-moduleset>
