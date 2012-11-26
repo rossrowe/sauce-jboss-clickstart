@@ -204,7 +204,7 @@ as the API is included in JBoss AS 7 -->
         <dependency>
             <groupId>com.saucelabs</groupId>
             <artifactId>arquillian-sauce-drone</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.4</version>
             <scope>test</scope>
         </dependency>
 

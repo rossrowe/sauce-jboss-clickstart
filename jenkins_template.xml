@@ -50,6 +50,7 @@
         <groupId>com.cloudbees</groupId>
         <artifactId>java-rest-backbone</artifactId>
     </rootModule>
+    <goals>-Parq-jbossas-managed</goals>
     <aggregatorStyleBuild>true</aggregatorStyleBuild>
     <incrementalBuild>false</incrementalBuild>
     <usePrivateRepository>false</usePrivateRepository>
@@ -89,11 +90,11 @@
     <buildWrappers>
         <hudson.plugins.sauce__ondemand.SauceOnDemandBuildWrapper>
             <enableSauceConnect>true</enableSauceConnect>
-            <seleniumHost></seleniumHost>
+            <seleniumHost>localhost</seleniumHost>
             <seleniumPort>4445</seleniumPort>
             <seleniumInformation>
                 <webDriverBrowsers>
-                    <string>Windows 2008internet explorer9</string>
+                    <string>Windows 2008chrome</string>
                 </webDriverBrowsers>
                 <isWebDriver>true</isWebDriver>
             </seleniumInformation>
