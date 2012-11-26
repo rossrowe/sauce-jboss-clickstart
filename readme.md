@@ -2,7 +2,7 @@ Java EE 6 Web Profile with Continuous Deployment and Sauce support
 -----
 
 This ClickStart is a full Java EE 6 Web Profile application, with a database and continuous deployment.  It also
-demonstrates how to run Selenium tests against the Clickstart using [Sauce](http://saucelabs.com)
+demonstrates how to run Selenium tests against the Clickstart application using [Sauce OnDemand](http://saucelabs.com) and [Arquillian Drone](https://docs.jboss.org/author/display/ARQ/Drone).
 Launch this ClickStart and it will generate a database, app, source repo and build service for you. 
 
 This is an example of the jboss container in action. It showcases JPA and persistence configuration EE 6 style and how to setup an app that uses persistence.xml with a CloudBees database. To make changes, clone your generated repo. 

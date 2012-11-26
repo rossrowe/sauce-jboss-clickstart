@@ -1,5 +1,8 @@
 package org.jboss.tools.examples.test;
 
+import com.saucelabs.common.SauceOnDemandAuthentication;
+import com.saucelabs.common.SauceOnDemandSessionIdProvider;
+import com.saucelabs.junit.SauceOnDemandTestWatcher;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.drone.api.annotation.Drone;
 import org.jboss.arquillian.junit.Arquillian;
@@ -11,10 +14,12 @@ import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.jboss.tools.examples.controller.MemberRegistration;
 import org.jboss.tools.examples.model.Member;
 import org.jboss.tools.examples.util.Resources;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import javax.inject.Inject;
 import java.io.File;
@@ -24,11 +29,16 @@ import java.util.logging.Logger;
 import static org.junit.Assert.assertEquals;
 
 /**
- *
  * @author Ross Rowe
  */
 @RunWith(Arquillian.class)
-public class MemberRegistrationWebDriverTest {
+public class MemberRegistrationWebDriverTest implements SauceOnDemandSessionIdProvider {
+
+    public SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication();
+
+    public
+    @Rule
+    SauceOnDemandTestWatcher resultReportingTestWatcher = new SauceOnDemandTestWatcher(this, authentication);
 
     @Deployment(testable = false)
     public static Archive<?> createTestArchive() {
@@ -91,4 +101,8 @@ public class MemberRegistrationWebDriverTest {
         assertEquals("size must be between 1 and 25", webDriver.findElement(By.cssSelector("span.invalid")).getText());
     }
 
+    @Override
+    public String getSessionId() {
+        return ((RemoteWebDriver) webDriver).getSessionId().toString();
+    }
 }

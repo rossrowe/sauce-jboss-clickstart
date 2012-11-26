@@ -208,6 +208,13 @@ as the API is included in JBoss AS 7 -->
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.saucelabs</groupId>
+            <artifactId>sauce_junit</artifactId>
+            <version>1.0.10</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -25,9 +25,8 @@
         </configuration>
     </container>
 
-    <extension qualifier="sauce-webdriver">
-        <property name="implementationClass">com.saucelabs.drone.webdriver.SauceWebDriverFactory</property>
-    </extension>
+    <!-- Adds the Sauce OnDemand Drone extension for WebDriver -->
+    <extension qualifier="sauce-webdriver"/>
 
 
 </arquillian>
