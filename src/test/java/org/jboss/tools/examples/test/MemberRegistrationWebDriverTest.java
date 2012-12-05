@@ -72,7 +72,7 @@ public class MemberRegistrationWebDriverTest implements SauceOnDemandSessionIdPr
     public void verifyKitchenSink() throws Exception {
         //verify that the kitchen sink page is okay
         webDriver.get(contextPath.toString());
-        assertEquals("Welcome to the Java EE 6 Clickstart", webDriver.findElement(By.cssSelector("h1")).getText());
+        assertEquals("Welcome to the Sauce Java EE 6 Clickstart", webDriver.findElement(By.cssSelector("h1")).getText());
     }
 
     @Test
