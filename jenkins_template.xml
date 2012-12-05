@@ -50,7 +50,7 @@
         <groupId>com.cloudbees</groupId>
         <artifactId>java-rest-backbone</artifactId>
     </rootModule>
-    <goals>-Parq-jbossas-managed</goals>
+    <goals>-Parq-jbossas-managed install</goals>
     <aggregatorStyleBuild>true</aggregatorStyleBuild>
     <incrementalBuild>false</incrementalBuild>
     <usePrivateRepository>false</usePrivateRepository>
