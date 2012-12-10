@@ -20,7 +20,7 @@
         }
     ],
     "build-with-jenkins": {
-        "plugins" : ["git", "sauce-ondemand"],
+        "plugins" : ["git", "sauce-ondemand", "jacoco"],
         "template": {
             "type": "https://raw.github.com/rossrowe/sauce-jboss-clickstart/master/jenkins_template.xml",
             "options": {
