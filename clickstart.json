@@ -5,7 +5,7 @@
     "description" : "A full Java EE 6 Web Profile application, with a database and continuous deployment and Sauce support",
     "doc-url" : "https://github.com/rossrowe/sauce-jboss-clickstart/blob/master/readme.md",
     "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/ee_icon.png",
-    "app-package" : "https://github.com/downloads/rossrowe/sauce-jboss-clickstart/sauce-jboss-db-example.war",
+    "app-package" : "https://repository-saucelabs.forge.cloudbees.com/release/org/jboss/tools/examples/sauce-jboss-db-example/0.0.1-SNAPSHOT/sauce-jboss-db-example-0.0.1-20121210.085056-1.war",
 
     "supported-by" : "cloudbees", 
     "order" : 1,
