@@ -31,6 +31,8 @@ to work with JBoss EAP 6. It requires you have access to the JBoss EAP 6 maven r
         -->
         <arquillian.version>1.0.3.Final</arquillian.version>
         <drone.version>1.1.0.Final</drone.version>
+        <arquillian.jacoco.version>1.0.0.Alpha5</arquillian.jacoco.version>
+        <jacoco.version>0.6.0.201210061924</jacoco.version>
     </properties>
 
     <dependencyManagement>
@@ -412,6 +414,23 @@ given to the generated war, and hence the context root) -->
             </build>
         </profile>
 
+        <profile>
+            <id>with-jacoco</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.jboss.arquillian.extension</groupId>
+                    <artifactId>arquillian-jacoco</artifactId>
+                    <version>${arquillian.jacoco.version}</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>org.jacoco.core</artifactId>
+                    <version>${jacoco.version}</version>
+                </dependency>
+            </dependencies>
+
+        </profile>
+
 
     </profiles>
     <repositories>
@@ -454,4 +473,15 @@ given to the generated war, and hence the context root) -->
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
 </project>
