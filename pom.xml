@@ -454,4 +454,15 @@ given to the generated war, and hence the context root) -->
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>cloudbees-private-release-repository</id>
+            <url>dav:https://repository-saucelabs.forge.cloudbees.com/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloudbees-private-release-repository</id>
+            <url>dav:https://repository-saucelabs.forge.cloudbees.com/release</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
