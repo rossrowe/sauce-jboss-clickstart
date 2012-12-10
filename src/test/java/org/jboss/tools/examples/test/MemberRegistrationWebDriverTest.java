@@ -53,7 +53,7 @@ public class MemberRegistrationWebDriverTest implements SauceOnDemandSessionIdPr
                 .addAsWebResource(new File("src/main/webapp/resources/css/screen.css"), "resources/css/screen.css")
                 .addAsWebResource(new File("src/main/webapp/resources/gfx/banner.png"), "resources/gfx/banner.png")
                 .addAsWebResource(new File("src/main/webapp/resources/gfx/logo.png"), "resources/gfx/logo.png")
-                .setWebXML(new File("src/main/webapp/WEB-INF/web.xml"));
+                .setWebXML(new File("src/test/resources/arquillian-web.xml"));
     }
 
     @Inject
