@@ -27,7 +27,15 @@
     </container>
 
     <!-- Adds the Sauce OnDemand Drone extension for WebDriver -->
-    <extension qualifier="sauce-webdriver"/>
+    <extension qualifier="sauce-webdriver">
+        <!-- Uncomment these settings when using the Sauce Drone extension locally -->
+        <!-- When the properties are not supplied, the extension will read env vars set by the Sauce Jenkins plugin -->
+        <!--<property name="userName">YOUR_SAUCE_USER</property>-->
+        <!--<property name="accessKey">YOUR_SAUCE_ACCESS_KEY</property>-->
+        <!--<property name="browser">firefox</property>-->
+        <!--<property name="os">Windows 2003</property>-->
+        <!--<property name="version">17</property>-->
+    </extension>
 
 
 </arquillian>
